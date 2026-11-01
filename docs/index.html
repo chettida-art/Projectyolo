@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOLO Polygon Predict</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f6fb; --card: #ffffff; --text: #1d2433; --muted: #6b7385;
+    --accent: #3b5bdb; --accent-soft: #e7ecff; --border: #e1e5ee; --error: #c92a2a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151c; --card: #1b2029; --text: #e7eaf0; --muted: #9aa3b5;
+      --accent: #748ffc; --accent-soft: #232a40; --border: #2c3341; --error: #ff8787;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "Sarabun", system-ui, sans-serif; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 16px 48px; }
+  h1 { margin: 0 0 4px; font-size: 1.7rem; }
+  .sub { color: var(--muted); margin: 0 0 22px; }
+  .classes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 22px; }
+  .chip { background: var(--accent-soft); color: var(--accent); padding: 3px 10px; border-radius: 999px; font-size: .85rem; font-weight: 600; }
+  .grid { display: grid; grid-template-columns: 340px 1fr; gap: 20px; }
+  @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 18px; min-width: 0; }
+  .drop { border: 2px dashed var(--border); border-radius: 12px; padding: 26px 12px; text-align: center; cursor: pointer; color: var(--muted); transition: .15s; }
+  .drop.over, .drop:hover { border-color: var(--accent); color: var(--accent); }
+  .drop img { max-width: 100%; max-height: 200px; border-radius: 8px; display: block; margin: 0 auto 8px; }
+  label { display: block; font-weight: 600; margin: 16px 0 6px; }
+  input[type=range] { width: 100%; accent-color: var(--accent); }
+  button { width: 100%; margin-top: 18px; padding: 11px; border: 0; border-radius: 10px; background: var(--accent); color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+  button:disabled { opacity: .5; cursor: default; }
+  .result img { width: 100%; border-radius: 10px; display: block; }
+  .placeholder { color: var(--muted); text-align: center; padding: 80px 0; }
+  .top { font-size: 1.25rem; margin: 14px 0 10px; }
+  .top b { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; }
+  .bar { height: 6px; background: var(--accent-soft); border-radius: 3px; overflow: hidden; min-width: 60px; }
+  .bar > span { display: block; height: 100%; background: var(--accent); }
+  .status { color: var(--muted); font-size: .9rem; margin-top: 10px; }
+  .error { color: var(--error); margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>ทายรูปด้วย YOLO Polygon (Segmentation)</h1>
+  <p class="sub">อัปโหลดรูป แล้วโมเดลที่เทรนด้วย Polygon weight จะวาดขอบเขตวัตถุและบอกว่าเป็นอะไร (ประมวลผลในเบราว์เซอร์)</p>
+
+  <div class="classes" id="classes"></div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="drop" id="drop">
+        <div id="preview">คลิก, ลากรูปมาวาง หรือกด <b>Ctrl+V</b> เพื่อวางรูปที่ copy มา</div>
+      </div>
+      <input type="file" id="file" accept="image/*" hidden>
+
+      <label for="conf">Confidence ขั้นต่ำ: <span id="confVal">0.25</span></label>
+      <input type="range" id="conf" min="0.05" max="0.95" step="0.05" value="0.25">
+
+      <button id="btn" disabled>Predict</button>
+      <div class="status" id="status">กำลังโหลดโมเดล...</div>
+      <div class="error" id="err"></div>
+    </div>
+
+    <div class="card result" id="result">
+      <div class="placeholder">ผลลัพธ์จะแสดงที่นี่</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

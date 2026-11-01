@@ -1,0 +1,12 @@
+{
+  "names": [
+    "bird",
+    "cat",
+    "dog",
+    "fox",
+    "human",
+    "tiger"
+  ],
+  "imgsz": 640,
+  "stride": 32
+}

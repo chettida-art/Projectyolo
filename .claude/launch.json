@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "yolo-webapp",
+      "runtimeExecutable": "C:\\ml_focus\\python.exe",
+      "runtimeArgs": ["webapp\\app.py"],
+      "port": 5000
+    }
+  ]
+}

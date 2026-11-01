@@ -1,0 +1,27 @@
+{
+  "version": "0.4.43",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "dog",
+      "text": "",
+      "points": [
+        [
+          76.0,
+          52.0
+        ],
+        [
+          511.0,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "pixabay_dog_002979.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512
+}

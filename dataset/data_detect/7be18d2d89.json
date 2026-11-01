@@ -1,0 +1,27 @@
+{
+  "version": "0.4.43",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tiger",
+      "text": "",
+      "points": [
+        [
+          0.0,
+          63.0
+        ],
+        [
+          2983.0,
+          2516.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "7be18d2d89.jpg",
+  "imageData": null,
+  "imageHeight": 2517,
+  "imageWidth": 3357
+}

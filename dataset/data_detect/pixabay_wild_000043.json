@@ -1,0 +1,27 @@
+{
+  "version": "0.4.43",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "fox",
+      "text": "",
+      "points": [
+        [
+          50.0,
+          29.0
+        ],
+        [
+          511.0,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "pixabay_wild_000043.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512
+}

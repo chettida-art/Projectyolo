@@ -1,0 +1,6 @@
+bird
+cat
+dog
+fox
+human
+tiger

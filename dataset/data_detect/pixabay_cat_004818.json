@@ -1,0 +1,27 @@
+{
+  "version": "0.4.43",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "cat",
+      "text": "",
+      "points": [
+        [
+          0.0,
+          4.0
+        ],
+        [
+          401.0,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "pixabay_cat_004818.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512
+}

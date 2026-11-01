@@ -1,0 +1,27 @@
+{
+  "version": "0.4.43",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "fox",
+      "text": "",
+      "points": [
+        [
+          316.0,
+          922.0
+        ],
+        [
+          1772.0,
+          1699.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "fox059.jpg",
+  "imageData": null,
+  "imageHeight": 2500,
+  "imageWidth": 2500
+}

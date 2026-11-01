@@ -1,0 +1,27 @@
+{
+  "version": "0.4.43",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tiger",
+      "text": "",
+      "points": [
+        [
+          84.0,
+          51.0
+        ],
+        [
+          511.0,
+          511.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "pixabay_wild_000873.jpg",
+  "imageData": null,
+  "imageHeight": 512,
+  "imageWidth": 512
+}

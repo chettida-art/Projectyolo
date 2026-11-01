@@ -1,0 +1,44 @@
+{
+  "version": "0.4.43",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "bird",
+      "text": "",
+      "points": [
+        [
+          571.0,
+          327.0
+        ],
+        [
+          1087.0,
+          600.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "bird",
+      "text": "",
+      "points": [
+        [
+          235.0,
+          156.0
+        ],
+        [
+          496.0,
+          481.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "64c08f053c.jpg",
+  "imageData": null,
+  "imageHeight": 933,
+  "imageWidth": 1400
+}

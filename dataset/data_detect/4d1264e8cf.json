@@ -1,0 +1,45 @@
+{
+  "version": "0.4.43",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "tiger",
+      "text": "",
+      "points": [
+        [
+          419.0,
+          489.0
+        ],
+        [
+          1059.0,
+          877.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "tiger",
+      "text": "",
+      "points": [
+        [
+          1232.0,
+          576.0
+        ],
+        [
+          1555.0,
+          795.0
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "4d1264e8cf.jpg",
+  "imageData": null,
+  "imageHeight": 1043,
+  "imageWidth": 1600,
+  "text": ""
+}
